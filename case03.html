@@ -5,128 +5,15 @@
     <title>Title</title>
     <style>
 
-       /* section:nth-child(1){
-          width: 100vw;
-            height: 100vh;
-            position: relative;
-        }
-
-
-        section:nth-child(1)>div:nth-child(1){
-            width: 20vw;
-            height: 20vw;
-            border-radius: 50%;
-            background-color: grey;
-
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-
-        }
-        section:nth-child(1)>div:nth-child(2){
-            width: 18vw;
-            height: 18vw;
-            border-radius: 50%;
-            background-color: brown;
-
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-
-        }
-        section:nth-child(1)>div:nth-child(3){
-            width: 15vw;
-            height: 15vw;
-            border-radius: 50%;
-            background-color: white;
-
-            position: fixed;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-
-        }
-        section:nth-child(1)>div:nth-child(4){
-            width: 15vw;
-            height: 15vw;
-            border-radius: 50%;
-            background-color: royalblue;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-
-        section:nth-child(2){
-            width: 100vw;
-            height: 100vh;
-
-            position: relative;
-        }
-
-        section:nth-child(2)>div{
-            width: 15vw;
-            height: 15vw;
-            border-radius: 50%;
-            background-color: purple;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-        section:nth-child(3){
-            width: 100vw;
-            height: 100vh;
-
-            position: relative;
-        }
-        section:nth-child(3)>div{
-            width: 15vw;
-            height: 15vw;
-            border-radius: 50%;
-            background-color: red;
-            position: absolute;
-            top: 0;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
-
-*/
-       section:nth-child(1){
+       section{
            width: 100vw;
            height: 100vh;
            position: relative;
        }
 
-       section:nth-child(2){
-           width: 100vw;
-           height: 100vh;
-
-           position: relative;
-       }
-
-       section:nth-child(3){
-           width: 100vw;
-           height: 100vh;
-
-           position: relative;
-       }
        section:nth-child(1)>section{
            position: fixed;
+           z-index: 2;
        }
 
        section:nth-child(1)>section>div:nth-child(1){
@@ -142,6 +29,7 @@
            left: 0;
            right: 0;
            margin: auto;
+
        }
        section:nth-child(1)>section>div:nth-child(2){
            width: 280px;
@@ -156,6 +44,7 @@
            left: 0;
            right: 0;
            margin: auto;
+
        }
 
        section:nth-child(1)>div{
@@ -169,7 +58,7 @@
            left: 0;
            right: 0;
            margin: auto;
-
+            z-index: 1;
 
 
        }
@@ -185,12 +74,13 @@
            left: 0;
            right: 0;
            margin: auto;
+           z-index: 1;
 
        }
        section:nth-child(3)>div{
            width: 280px;
            height: 280px;
-           background-color: yellow;
+           background-color: red;
            border-radius: 50%;
            position: absolute;
            top: 0;
@@ -198,10 +88,17 @@
            left: 0;
            right: 0;
            margin: auto;
-
+    z-index: 1;
        }
 
-
+section>div>h1{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+}
 
 
     </style>
@@ -217,7 +114,7 @@
         <div></div>
     </section>
     <div>
-        <div>Hello</div>
+        <h1>Hello</h1>
     </div>
 
 
@@ -225,10 +122,14 @@
 
 
 <section>
-    <div>Welcome to</div>
+    <div>
+        <h1>Welcometo</h1>
+    </div>
 </section>
 <section>
-    <div>IJse</div>
+    <div>
+        <h1>Ijse</h1>
+    </div>
 </section>
 
 
