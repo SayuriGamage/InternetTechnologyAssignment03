@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+
+        section{
+           position: relative;
+            width: 100vw;
+            height: 100vh;
+        }
+
+        section:nth-child(1){
+            background-color: yellow;
+        }
+        section:nth-child(2){
+            background-color: royalblue;
+        }
+        section:nth-child(3){
+            background-color: pink;
+        }
+        section:nth-child(4){
+            background-color: purple;
+        }
+        section>h1{
+
+            font-size: 150px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            margin: 0;
+        }
+
+        section>header{
+            height: 100px;
+            width: 100vw;
+            position: sticky;
+               top: 0;
+            z-index: 1;
+        }
+
+        section:nth-child(1)>header{
+            background-color: #ff5722;
+        }
+        section:nth-child(2)>header{
+            background-color: red;
+        }
+        section:nth-child(3)>header{
+            background-color: hotpink;
+        }
+        section:nth-child(4)>header{
+            background-color: black;
+        }
+        section>header>div{
+            font-size: 30px;
+            color: white;
+            position: absolute;
+             top: 50px;
+            left: 30px;
+        }
+
+
+
+    </style>
+
+</head>
+<body>
+<section>
+    <h1>Hello</h1>
+    <header>
+        <div>card1</div>
+    </header>
+
+</section>
+<section>
+    <h1>How</h1>
+    <header>
+        <div>card2</div>
+    </header>
+
+</section>
+<section>
+    <h1>Are</h1>
+    <header>
+        <div>card3</div>
+    </header>
+
+</section>
+<section>
+    <h1>You?</h1>
+    <header>
+        <div>card4</div>
+    </header>
+
+</section>
+</body>
+</html>
